@@ -1,2 +1,14 @@
 
 credentials.py
+*.png
+.temp/
+CLIP/
+guided-diffusion/
+steps/
+taming/
+taming-transformers/
+venv/
+vqgan_imagenet_f16_16384.ckpt
+vqgan_imagenet_f16_16384.yaml
+256x256_diffusion_uncond.pt
+__pycache__/icon_image.cpython-37.pyc
