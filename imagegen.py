@@ -326,7 +326,7 @@ icon_path = "icon.png"
 model_name = "vqgan_imagenet_f16_16384"
 seed = 42
 
-texts = 'cyberpunk forest by Salvador Dali'  # @param {type:"string"}
+texts = 'I love you Morgan'  # @param {type:"string"}
 width = 600  # @param {type:"integer"}
 height = 600  # @param {type:"integer"}
 init_image = ""  # @param {type:"string"}
