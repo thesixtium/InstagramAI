@@ -4,8 +4,8 @@ import instagramPost
 
 def main(prompt):
     imagegen.run(prompt)
-    instagramPost.post("progress.png", prompt)
+    # instagramPost.post("progress.png", prompt)
 
 
 if __name__ == '__main__':
-    main("moon")
+    main("lilac | cherry")
