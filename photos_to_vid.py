@@ -6,6 +6,7 @@ from moviepy.editor import *
 def run():
     image_folder = 'steps'
     video_name = 'steps.avi'
+    out_loc = 'instagram_post.mp4'
 
     images = [img for img in os.listdir(image_folder) if img.endswith(".png")]
     frame = cv2.imread(os.path.join(image_folder, images[0]))
@@ -19,11 +20,8 @@ def run():
     cv2.destroyAllWindows()
     video.release()
 
-    in_loc = 'progress.avi'
-    out_loc = 'instagram_post.mp4'
-
     # Import video clip
-    clip = VideoFileClip(in_loc)
+    clip = VideoFileClip(video_name)
     print("fps: {}".format(clip.fps))
 
     # Modify the FPS

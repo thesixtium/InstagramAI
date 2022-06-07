@@ -12,7 +12,7 @@ adjectives = ["cyberpunk", "steampunk", "goth",
               "Vincent Van Gogh", "disney", "pixar",
               "evil", "rendered in unreal engine high quality",
               "Mordor", "at night", "during the day",
-              "wizard"]
+              "wizard", "cherry"]
 
 nouns = ["forest", "robot", "Microsoft Excel",
          "city", "duel", "Mark Zuckerberg",
@@ -37,7 +37,7 @@ def get_phrase():
      Can weight stuff with XYZ:3 -> will weight XYZ 3 times more
      Use XYZ:-1 to remove it from image
     '''
-    choice = random.randint(1, 17) % 13
+    choice = (random.randint(1, 17) % 12) + 1
 
     if choice == 1:
         return nouns[random.randint(0, len(nouns) - 1)]

@@ -1,11 +1,16 @@
 import imagegen
 import instagramPost
+import prompt_maker
 
 
-def main(prompt):
+def run(prompt):
     imagegen.run(prompt)
-    # instagramPost.post("progress.png", prompt)
+    instagramPost.post(prompt)
+
+
+def main():
+    run(prompt_maker.get_phrase())
 
 
 if __name__ == '__main__':
-    main("lilac | cherry")
+    main()
